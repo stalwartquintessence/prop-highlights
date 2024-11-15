@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+button {
+  font-family: "Inter";
+}
+
+input {
+  font-family: "Poppins";
+}
+
+.container {
+  border: 1px solid #ddd;
+  width: 70vw;
+  margin: 10rem auto 0;
+}
+
+.highlight-list__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.highlight-list__title {
+  display: flex;
+  gap: 10px;
+  line-height: 16px;
+  color: #7261FF;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.highlight-list__title img {
+  cursor: pointer;
+}
+
+.highlight-list__add-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #7261FF;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.highlight-list__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.highlight-list__item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid #DDD;
+  margin: -1px;
+  padding: 20px 30px 20px 15px;
+  transition: transform 0.3s ease, background-color 0.2s ease, opacity 0.3s ease;
+  position: relative;
+  cursor: grab;
+}
+
+.highlight-list__item:active {
+  cursor: grabbing;
+}
+
+.highlight-list__item:hover {
+  background-color: #f7f7f7;
+}
+
+.highlight-list__item input[type="text"] {
+  flex-grow: 1;
+  border: 1px solid #EAECF0;
+  border-radius: 5px;
+  background: transparent;
+  color: #4E5864;
+  font-size: 14px;
+  margin: 0;
+  padding: 6px;
+  text-indent: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.highlight-list__item input[type="text"]:focus {
+  outline: none;
+  border-color: #7261FF;
+}
+
+.highlight-list__delete-icon {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.highlight-list__delete-icon:hover {
+  opacity: 1;
+}
